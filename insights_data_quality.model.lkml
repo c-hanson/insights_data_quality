@@ -13,30 +13,58 @@ datagroup: insights_data_quality_default_datagroup {
 
 persist_with: insights_data_quality_default_datagroup
 
-explore: airflow_task_instance {}
+explore: airflow_task_instance {
+    hidden:  yes
+}
 
-explore: events1 {}
+explore: events1 {
+  hidden:  yes
+  }
 
-explore: events2 {}
+explore: events2 {
+  hidden:  yes
+  }
 
-explore: locationdeets {}
+explore: locationdeets {
+  hidden:  yes
+  }
 
-explore: locdeetsplt {}
+explore: locdeetsplt {
+  hidden:  yes
+  }
 
-explore: pageviews1 {}
+explore: pageviews1 {
+  hidden:  yes
+  }
 
-explore: pageviews2 {}
+explore: pageviews2 {
+  hidden:  yes
+  }
 
-explore: pageviews2plt {}
+explore: pageviews2plt {
+  hidden:  yes
+  }
 
-explore: purchases1 {}
+explore: purchases1 {
+  hidden:  yes
+  }
 
-explore: purchases2 {}
+explore: purchases2 {
+  hidden:  yes
+  }
 
-explore: query_trend_hourly {}
+explore: query_trend_hourly {
+  hidden:  yes
+  }
 
-explore: sessions1 {}
+explore: sessions1 {
+  hidden:  yes
+  }
 
-explore: sessions2 {}
+explore: sessions2 {
+  hidden:  yes
+  }
 
-explore: system_query_metrics {}
+explore: system_query_metrics {
+  hidden:  yes
+  }
