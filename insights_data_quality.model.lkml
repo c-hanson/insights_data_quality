@@ -2,9 +2,7 @@ connection: "parkwhiz_redshift"
 
 # include all the views
 include: "*.view"
-
 # include all the dashboards
-include: "*.dashboard"
 
 datagroup: insights_data_quality_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -68,3 +66,6 @@ explore: sessions2 {
 explore: system_query_metrics {
   hidden:  yes
   }
+explore: duplicate_pageviews {
+  hidden:  no
+}
