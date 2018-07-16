@@ -1,31 +1,25 @@
 view: duplicate_pageviews {
 
   # # You can specify the table name if it's different from the view name:
-  sql_table_name: __pw_monitoring.duplicate_pageviews ;;
+  sql_table_name: __pw_monitoring.duplicate_pageviews_agg ;;
   #
   # # Define your dimensions and measures here, like this:
-  dimension: session_id {
-    description: " session which logged a duplicate pageview"
-    type: string
-    sql: ${TABLE}.session_id ;;
+  dimension: sum_events {
+    description: "Sum of all the duplicate events"
+    type: number
+    sql: ${TABLE}.sum_events ;;
    }
 
-  dimension: time_of_event {
-    description: "Timestamp of duped pageview"
-    type: date_time
-    sql: ${TABLE}.time_of_event ;;
-  }
-
-  dimension: platform {
-    description: "The platform which logged a duplicate pageview"
-    type: string
-    sql: ${TABLE}.platform ;;
-  }
-
-  dimension: count {
-    description: "The number of dupes"
+  dimension: count_events {
+    description: "Count of instances of multiple events firing"
     type: number
-    sql: ${TABLE}.count ;;
+    sql: ${TABLE}.count_events ;;
+  }
+
+  dimension: total_events {
+    description: "Total pageview events for a day, dupes and non-dupes"
+    type: number
+    sql: ${TABLE}.total_events ;;
   }
 
   dimension: date_of_event {
