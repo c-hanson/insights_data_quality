@@ -67,5 +67,5 @@ explore: system_query_metrics {
   hidden:  yes
   }
 explore: duplicate_pageviews {
-  hidden:  no
+  hidden:  yes
 }
