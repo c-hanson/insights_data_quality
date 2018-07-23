@@ -69,3 +69,7 @@ explore: system_query_metrics {
 explore: duplicate_pageviews {
   hidden:  yes
 }
+
+explore: lagging_events {
+  hidden:  no
+}
