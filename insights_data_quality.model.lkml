@@ -71,5 +71,5 @@ explore: duplicate_pageviews {
 }
 
 explore: lagging_events {
-  hidden:  no
+  hidden:  yes
 }
