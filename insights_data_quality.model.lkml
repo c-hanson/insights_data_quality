@@ -73,3 +73,7 @@ explore: duplicate_pageviews {
 explore: lagging_events {
   hidden:  yes
 }
+
+explore: events_with_missing_session {
+  hidden:  yes
+}
